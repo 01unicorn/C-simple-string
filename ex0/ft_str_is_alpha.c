@@ -1,4 +1,4 @@
-i__#include <stdio.h>
+#include <stdio.h>
 
 int	ft_str_is_alpha(char *str)
 {
@@ -9,7 +9,9 @@ int	ft_str_is_alpha(char *str)
 	{
 		if ((str[i] < 'a' || str[i] > 'z')
 			&& (str[i] < 'A' || str[i] > 'Z'))
+		{
 			return (0);
+		}
 		i++;
 	}
 	return (1);
